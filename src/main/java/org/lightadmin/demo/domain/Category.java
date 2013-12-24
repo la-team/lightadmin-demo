@@ -31,7 +31,7 @@ public class Category extends AbstractEntity {
 
     @Column(name = "image_url")
     @Size(max = 255)
-    @FileReference(baseDirectory = "/Users/max/Desktop/hubbery")
+    @FileReference(baseDirectory = "/file-storage/lightadmin-demo")
     private String image;
 
     @ManyToMany

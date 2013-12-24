@@ -17,7 +17,7 @@ public class ProductPhoto extends AbstractEntity {
     @NotBlank
     @Column(name = "image_url")
     @Size(max = 255)
-    @FileReference(baseDirectory = "/Users/max/Desktop/hubbery")
+    @FileReference(baseDirectory = "/file-storage/lightadmin-demo")
     private String image;
 
     @Column(name = "main_photo")

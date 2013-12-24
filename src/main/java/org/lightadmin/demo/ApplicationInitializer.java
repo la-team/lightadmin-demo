@@ -24,7 +24,7 @@ public class ApplicationInitializer extends AbstractContextLoaderInitializer {
         servletContext.setInitParameter(LIGHT_ADMINISTRATION_BASE_URL, "/");
         servletContext.setInitParameter(LIGHT_ADMINISTRATION_BACK_TO_SITE_URL, "http://lightadmin.org");
         servletContext.setInitParameter(LIGHT_ADMINISTRATION_BASE_PACKAGE, "org.lightadmin.demo.administration");
-        servletContext.setInitParameter(LIGHT_ADMINISTRATION_FILE_STORAGE_PATH, "/Users/max/Desktop/hubbery");
+        servletContext.setInitParameter(LIGHT_ADMINISTRATION_FILE_STORAGE_PATH, "/file-storage/lightadmin-demo");
         servletContext.setInitParameter(LIGHT_ADMINISTRATION_FILE_STREAMING, valueOf(true));
         servletContext.setSessionTrackingModes(of(COOKIE));
 

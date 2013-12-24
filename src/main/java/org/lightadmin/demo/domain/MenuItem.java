@@ -29,7 +29,7 @@ public class MenuItem extends AbstractEntity {
     private String url;
 
     @Column(name = "image_url")
-    @FileReference(baseDirectory = "/Users/max/Desktop/hubbery")
+    @FileReference(baseDirectory = "/file-storage/lightadmin-demo")
     private String image;
 
     private boolean published;
