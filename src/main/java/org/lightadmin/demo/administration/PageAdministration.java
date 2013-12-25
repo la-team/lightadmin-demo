@@ -1,14 +1,14 @@
 package org.lightadmin.demo.administration;
 
-import org.lightadmin.demo.domain.Page;
 import org.lightadmin.api.config.AdministrationConfiguration;
 import org.lightadmin.api.config.builder.EntityMetadataConfigurationUnitBuilder;
 import org.lightadmin.api.config.builder.FieldSetConfigurationUnitBuilder;
 import org.lightadmin.api.config.builder.PersistentFieldSetConfigurationUnitBuilder;
 import org.lightadmin.api.config.unit.EntityMetadataConfigurationUnit;
 import org.lightadmin.api.config.unit.FieldSetConfigurationUnit;
+import org.lightadmin.demo.domain.Page;
 
-import static org.lightadmin.api.config.utils.Editors.textArea;
+import static org.lightadmin.api.config.utils.Editors.wysiwyg;
 
 @SuppressWarnings("unused")
 public class PageAdministration extends AdministrationConfiguration<Page> {
@@ -56,7 +56,7 @@ public class PageAdministration extends AdministrationConfiguration<Page> {
                 .field("name").caption("Name")
                 .field("title").caption("Title")
                 .field("published").caption("Published")
-                .field("content").caption("Content").editor(textArea())
+                .field("content").caption("Content").editor(wysiwyg())
                 .build();
     }
 }
