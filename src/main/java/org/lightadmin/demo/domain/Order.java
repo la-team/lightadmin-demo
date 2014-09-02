@@ -40,7 +40,7 @@ public class Order extends AbstractEntity {
     @Column(name = "delivery_address")
     private String deliveryAddress;
 
-    @OneToMany(cascade = ALL, orphanRemoval = true)
+    @OneToMany(cascade = ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "order_id")
     private Set<LineItem> lineItems = newLinkedHashSet();
 
