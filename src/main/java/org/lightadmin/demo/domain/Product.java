@@ -199,35 +199,35 @@ public class Product extends AbstractEntity {
         this.gender = gender;
     }
 
-    public int getDimensionLength() {
+    public Integer getDimensionLength() {
         return dimensionLength;
     }
 
-    public void setDimensionLength(int dimensionLength) {
+    public void setDimensionLength(Integer dimensionLength) {
         this.dimensionLength = dimensionLength;
     }
 
-    public int getDimensionWidth() {
+    public Integer getDimensionWidth() {
         return dimensionWidth;
     }
 
-    public void setDimensionWidth(int dimensionWidth) {
+    public void setDimensionWidth(Integer dimensionWidth) {
         this.dimensionWidth = dimensionWidth;
     }
 
-    public int getDimensionHeight() {
+    public Integer getDimensionHeight() {
         return dimensionHeight;
     }
 
-    public void setDimensionHeight(int dimensionHeight) {
+    public void setDimensionHeight(Integer dimensionHeight) {
         this.dimensionHeight = dimensionHeight;
     }
 
-    public int getDimensionWeight() {
+    public Integer getDimensionWeight() {
         return dimensionWeight;
     }
 
-    public void setDimensionWeight(int dimensionWeight) {
+    public void setDimensionWeight(Integer dimensionWeight) {
         this.dimensionWeight = dimensionWeight;
     }
 
