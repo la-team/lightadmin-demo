@@ -41,6 +41,7 @@
         <logback.version>1.0.13</logback.version>
         <junit.version>4.11</junit.version>
         <easymock.version>3.2</easymock.version>
+        <lightadmin.version>1.0.1.BUILD-SNAPSHOT</lightadmin.version>
     </properties>
 
     <dependencies>
@@ -48,7 +49,7 @@
         <dependency>
             <groupId>org.lightadmin</groupId>
             <artifactId>lightadmin</artifactId>
-            <version>1.0.0.RELEASE</version>
+            <version>${lightadmin.version}</version>
         </dependency>
 
         <dependency>
