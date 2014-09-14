@@ -29,7 +29,8 @@ public class ApplicationInitializer extends AbstractContextLoaderInitializer {
                 .backToSiteUrl("http://lightadmin.org")
                 .basePackage("org.lightadmin.demo.administration")
                 .fileStoragePath("/file-storage/lightadmin-demo")
-                .fileStreaming(true);
+                .fileStreaming(true)
+                .demoMode();
 
         servletContext.setSessionTrackingModes(of(COOKIE));
 
