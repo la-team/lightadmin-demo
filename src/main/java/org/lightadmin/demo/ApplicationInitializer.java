@@ -2,6 +2,7 @@ package org.lightadmin.demo;
 
 import org.lightadmin.api.config.LightAdmin;
 import org.lightadmin.demo.configuration.ApplicationConfiguration;
+import org.lightadmin.logging.configurer.LoggingConfigurerSettings;
 import org.springframework.core.annotation.Order;
 import org.springframework.web.context.AbstractContextLoaderInitializer;
 import org.springframework.web.context.WebApplicationContext;
@@ -12,8 +13,6 @@ import javax.servlet.ServletException;
 
 import static java.util.EnumSet.of;
 import static javax.servlet.SessionTrackingMode.COOKIE;
-import static org.lightadmin.logging.configurer.LightConfigurerWebApplicationInitializer.LIGHT_CONFIGURER_BACK_TO_SITE_URL;
-import static org.lightadmin.logging.configurer.LightConfigurerWebApplicationInitializer.LIGHT_CONFIGURER_BASE_URL;
 import static org.springframework.core.Ordered.HIGHEST_PRECEDENCE;
 
 @SuppressWarnings("unused")
@@ -46,7 +45,8 @@ public class ApplicationInitializer extends AbstractContextLoaderInitializer {
     }
 
     private static void configureWebLogger(ServletContext servletContext, String baseUrl) {
-        servletContext.setInitParameter(LIGHT_CONFIGURER_BASE_URL, baseUrl);
-        servletContext.setInitParameter(LIGHT_CONFIGURER_BACK_TO_SITE_URL, "http://lightadmin.org");
+        servletContext.setInitParameter(LoggingConfigurerSettings.LIGHT_CONFIGURER_BASE_URL, baseUrl);
+        servletContext.setInitParameter(LoggingConfigurerSettings.LIGHT_CONFIGURER_BACK_TO_SITE_URL, "http://lightadmin.org");
+        servletContext.setInitParameter(LoggingConfigurerSettings.LIGHT_CONFIGURER_DEMO_MODE, "true");
     }
 }
