@@ -16,6 +16,9 @@
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
 
+        <lightadmin.version>1.0.1.RELEASE</lightadmin.version>
+        <light-logging-configurer.version>1.0.0.RC1</light-logging-configurer.version>
+
         <spring.version>4.1.0.RELEASE</spring.version>
         <spring.security.version>3.2.5.RELEASE</spring.security.version>
         <spring.data.jpa.version>1.6.4.RELEASE</spring.data.jpa.version>
@@ -40,8 +43,6 @@
         <logback.version>1.0.13</logback.version>
         <junit.version>4.11</junit.version>
         <easymock.version>3.2</easymock.version>
-        <lightadmin.version>1.0.1.BUILD-SNAPSHOT</lightadmin.version>
-        <light-logging-configurer.version>1.0.0.BUILD-SNAPSHOT</light-logging-configurer.version>
     </properties>
 
     <dependencies>
